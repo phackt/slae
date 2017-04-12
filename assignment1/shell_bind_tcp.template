@@ -1,4 +1,4 @@
-; shell_bind_tcp.nasm
+; shell_bind_tcp.template
 ; 
 ; A TCP port bind shellcode
 ;

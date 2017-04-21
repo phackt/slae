@@ -5,6 +5,7 @@ Student **SLAE-891**
   
  - Assignment 1 - Shell_Bind_TCP Shellcode
  - Assignment 2 - Shell_Reverse_TCP Shellcode
+ - Assignment 3 - Egg Hunter Shellcode
   
 *Each assignment directory will provide an example of command line in order to generate your shellcode*  
 

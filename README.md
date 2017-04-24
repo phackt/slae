@@ -14,3 +14,5 @@ You will find the articles related to this repo in the **certification** section
  - Assignment 7 - Custom crypter
   
 *Each assignment directory will provide an example of command line in order to generate your shellcode*  
+  
+You are free to use and/or redistribute without restriction every source code of this repository.

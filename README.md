@@ -25,7 +25,7 @@ We recommend to run the commands on a 32bits environment. Otherwise you should a
 ```bash
 nasm -f elf32 -o $1.o $1.nasm
 ld -m elf_i386 -o $1 $1.o
-gcc -m32 -z execstack -o shellcode shellcode.c
+gcc -fno-stack-protector -z execstack -m32 -o shellcode shellcode.c
 ```
   
 You are free to use and/or redistribute without restriction every source code of this repository.

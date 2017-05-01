@@ -8,11 +8,11 @@ Egg Hunter Shellcode
   
 You can run the basic egg hunter with the following command:  
 ```bash
-gcc -o shellcode shellcode.c && ./shellcode
+gcc -fno-stack-protector -z execstack -o shellcode shellcode.c && ./shellcode
 ```  
   
 You can run the more advanced egg hunter with the following command:  
 ```bash
-gcc -o shellcode_heap shellcode_heap.c && ./shellcode_heap
+gcc -fno-stack-protector -z execstack -o shellcode_heap shellcode_heap.c && ./shellcode_heap
 ```  
 

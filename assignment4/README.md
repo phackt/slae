@@ -8,12 +8,12 @@ Encoding/Decoding shellcode
   
 Generate the encoded shellcode:  
 ```bash
-gcc -o shellcode_encode shellcode_encode.c && ./shellcode_encode
+gcc -fno-stack-protector -z execstack -o shellcode_encode shellcode_encode.c && ./shellcode_encode
 ```  
   
 Run the decoding routing and execute shellcode:  
 ```bash
-gcc -o shellcode shellcode.c && ./shellcode
+gcc -fno-stack-protector -z execstack -o shellcode shellcode.c && ./shellcode
 ```  
   
 

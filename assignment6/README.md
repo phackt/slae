@@ -10,7 +10,7 @@ Polymorphic shell-storm shellcodes
 
 Execute polymorphic execve:  
 ```bash
-gcc -o shellcode shellcode.c && ./shellcode
+gcc -fno-stack-protector -z execstack -o shellcode shellcode.c && ./shellcode
 ```  
   
 **unlink**  

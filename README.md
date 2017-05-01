@@ -21,4 +21,11 @@ The SLAE course has been performed on a 32bits Kali environment:
 Linux kali 4.6.0-kali1-686 #1 SMP Debian 4.6.4-1kali1 (2016-07-21) i686 GNU/Linux
 ```
   
+We recommend to run the commands on a 32bits environment. Otherwise you should adapt them:  
+```bash
+nasm -f elf32 -o $1.o $1.nasm
+ld -m elf_i386 -o $1 $1.o
+gcc -m32 -z execstack -o shellcode shellcode.c
+```
+  
 You are free to use and/or redistribute without restriction every source code of this repository.
